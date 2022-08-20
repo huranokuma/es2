@@ -7,7 +7,7 @@ API_URL = "https://api-inference.huggingface.co/models/huranokuma/es2"
 headers = {"Authorization": "Bearer "+API_KEY}
 
 st.set_page_config(
-     page_title="ESを書くAI",
+     page_title="ESを書くAI ver2.0",
      page_icon="🤖",
      initial_sidebar_state="expanded",
  )
@@ -17,7 +17,7 @@ def query(payload):
 	return response.json()
 
 def main():
-  st.title("AIによる自動ES作成")  
+  st.title("AIによる自動ES作成 ver2.0")  
 
   max_length = st.slider(label='最大文字数(最大トークン数)',
                   min_value=50,
