@@ -19,7 +19,7 @@ def query(payload):
 def main():
   st.title("AIによる自動ES作成 ver2.0")  
 
-  min_length = st.slider(label='最大文字数(最大トークン数)',
+  min_length = st.slider(label='最小文字数(最大トークン数)',
                   min_value=50,
                   max_value= 500,
                   value=100,
